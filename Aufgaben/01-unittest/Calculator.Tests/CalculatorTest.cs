@@ -6,7 +6,7 @@ namespace Calculator.Tests
     public class CalculatorTest
     {
         [Fact]
-        public void TestAddThreeToTwoPIsFive()
+        public void TestAddTwoToTwoIsFour()
         {
             // Arrange
             int a = 2;
@@ -34,6 +34,22 @@ namespace Calculator.Tests
             int actual = calculator.Subtract(a, b);
 
             // Then
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void TestMultiplyThreeWithFourIsTwelve()
+        {
+            // arrange
+            int a = 3;
+            int b = 4;
+            int expected = 12;
+            Calculator calculator = new Calculator();
+
+            // act
+            int actual = calculator.Multiply(a, b);
+
+            // assert
             Assert.Equal(expected, actual);
         }
     }
