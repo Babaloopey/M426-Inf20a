@@ -62,7 +62,7 @@ namespace Calculator.Tests
             Calculator calculator = new Calculator();
 
             // act and assert
-            Assert.Throws<DivideByZeroException>(() => calculator.Divide(a, b));
+            Assert.Throws<ArgumentException>(() => calculator.Divide(a, b));
             }
     }
 }
