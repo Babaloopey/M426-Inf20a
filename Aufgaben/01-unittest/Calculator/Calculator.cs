@@ -21,6 +21,11 @@ namespace Calculator
 
         public int Divide(int dividend, int divisor)
         {
+            if(divisor == 0)
+            {
+                throw new ArgumentException("Teilen durch 0 nicht möglich.");
+            }
+
             return dividend / divisor;
         }
     }
