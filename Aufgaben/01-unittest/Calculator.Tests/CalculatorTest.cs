@@ -10,8 +10,8 @@ namespace Calculator.Tests
         {
             // Arrange
             int a = 2;
-            int b = 3;
-            int expected = 5;
+            int b = 2;
+            int expected = 4;
             Calculator calculator = new Calculator();
 
             // Act
